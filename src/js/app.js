@@ -1,7 +1,7 @@
 import '../sass/main.sass';
+import '../index.html'
 import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
-
 
 onePageScroll(".main", {
   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
