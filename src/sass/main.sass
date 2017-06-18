@@ -1,24 +1,37 @@
 $active: #a9d5d8
 $dark: #2d2d2d
+$grey: #68686a
+$white: #fff
+$black: #000
 html,
 body
   height: 100%
   font-size: 18px
-  overflow: hidden
-  color: #fff
+  color: $white
+  &::-webkit-scrollbar
+    display: none
+
 *,
 ul
   margin: 0
   padding: 0
   box-sizing: border-box
+
 ul
   list-style-type: none
+
 a
   color: inherit
   &:hover
     color: $active
+
 .active-link
   color: $active
+
+.wrapper
+  overflow: hidden
+  height: 100%
+
 .main
   height: 100%
 
@@ -26,18 +39,26 @@ a
   height: 100%
   overflow: hidden
   position: relative
+  &__img
+    width: 100%
+
 .container
   padding: 0 6.25%
-.illuminator
-  background: url('../img/96113.jpg') no-repeat
-  background-size: cover
-.family
-  background: url('../img/best-wallpapers-hd-6.jpg') no-repeat
-  background-size: cover
-  display: flex
-.design
-  background: url('../img/sweet-1920x1080-background-1920x1080-wallpaper.jpg') no-repeat
-  background-size: cover
+
+.button
+  background-color: transparent
+  color: $white
+  cursor: pointer
+  border: 1px solid $white
+  display: inline-block
+  text-transform: uppercase
+  &:hover
+    color: $grey
+    border-color: $grey
+
+.active-button
+  color: $grey
+  border-color: $grey
 
 .logo
   text-transform: uppercase
@@ -48,44 +69,8 @@ a
   &__span
     text-transform: lowercase
     font-size: 12px
-    color: #969696
+    color: $grey
     letter-spacing: -.02rem
-.header-nav
-  height: 60px
-  background-color: $dark
-  display: flex
-  justify-content: space-between
-  align-items: center
-  &__right
-    display: flex
-    align-items: center
-  &__contact
-    display: flex
-    align-items: center
-    margin-right: 20px
-    &__phone
-      font-size: 15px
-      margin-left: 22px
-  &__icons
-    display: flex
-    align-items: center
-    &__search-container
-      display: flex
-      flex-direction: column-reverse
-      align-items: center
-    &__search
-      font-size: 10px
-      line-height: 10px
-    a
-      margin-left: 20px
-  &__ul
-    display: flex
-  &__li
-    margin-right: 20px
-  &__a
-    text-transform: uppercase
-    font-size: 12px
-
 
 .info
   position: absolute
@@ -100,7 +85,7 @@ a
   &__main
     &__h2
       font-size: 70px
-      color: #fff
+      color: $white
     &__p
       margin: 15px 0 40px
     &__button
@@ -108,7 +93,25 @@ a
       height: 65px
       line-height: 65px
       text-align: center
-      background-color: #6f6f6f
+      background-color: $grey
       margin-left: auto
       text-transform: uppercase
       display: block
+
+.fixed-nav
+  position: fixed
+  top: calc(50% - 177px)
+  right: 0
+  &__li
+    display: block
+    text-align: center
+    margin-bottom: 1px
+    background-color: $black
+    width: 50px
+    height: 50px
+    line-height: 50px
+    cursor: pointer
+    &--social
+      margin: 0
+      background-color: $white
+      color: $black

@@ -1,17 +1,18 @@
-const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const extractPlugin = new ExtractTextPlugin({
-  filename: '/css/main.css'
+var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
+var extractPlugin = new ExtractTextPlugin({
+  filename: 'main.css'
 });
 
 module.exports = {
-  entry: './src/js/app.js',
   watch: true,
+  entry: './src/js/app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'js/bundle.js',
-    publicPath: '/dist'
+    filename: 'bundle.js',
+    // publicPath: '/dist'
   },
   module: {
     rules: [
@@ -27,105 +28,33 @@ module.exports = {
         ]
       },
       {
-        test: /\.sass$|\.scss$/,
+        test: /\.sass$/,
         use: extractPlugin.extract({
-          use: ['css-loader', 'sass-loader']
+          use: ['css-loader', 'autoprefixer-loader','sass-loader']
         })
-      },
-      {
-        test: /\.(jpg|png)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'img/',
-              publicPath: '../'
-            }
-          }
-        ]
-      },
-      {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: '/',
-              publicPath: '/'
-            }
-          }
-        ]
-      }
-    ]
-  },
-  plugins: [
-    extractPlugin
-  ]
-};
-
-/*
-
-const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const extractPlugin = new ExtractTextPlugin({
-  filename: '/css/main.css'
-});
-
-module.exports = {
-  entry: './src/js/app.js',
-  watch: true,
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'js/bundle.js',
-    publicPath: '/dist'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['es2015']
-            }
-          }
-        ]
-      },
-      {
-        test: /\.sass$|\.scss$/,
-        use: extractPlugin.extract({
-          use: ['css-loader', 'sass-loader']
-        })
-      },
-      {
-        test: /\.(jpg|png)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'img/',
-              publicPath: 'img/'
-            }
-          }
-        ]
       },
       {
         test: /\.html$/,
         use: ['html-loader']
+      },
+      {
+        test: /\.(jpg|png)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img/',
+            }
+          }
+        ]
       }
     ]
   },
   plugins: [
     extractPlugin,
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
-      "css": [ "main.css" ],
+      template: 'src/index.html'
     })
   ]
 };
-*/
