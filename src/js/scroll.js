@@ -15,7 +15,7 @@ class Scroll {
     });
     this.event = true;
     onePageScroll(".main", {
-      animationTime: 100,
+      animationTime: 1000,
       beforeMove: this.beforeMove.bind(this),
       afterMove: this.afterMove.bind(this),
       pagination: false,

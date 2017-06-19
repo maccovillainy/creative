@@ -1,6 +1,5 @@
-
 	<?php
-		require_once 'libs/Smarty.class.php';
+		require_once '../libs/Smarty.class.php';
 
 		$smarty = new Smarty;
 
@@ -9,7 +8,7 @@
 		$smarty->config_dir = 'config';
 		$smarty->cache_dir = 'chache';
 
-		$title = 'i`m title';
+		$title = 'Creative';
 
 		$smarty->assign('title', $title);
 		$smarty->display('index.html');
