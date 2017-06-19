@@ -15,9 +15,10 @@ class Scroll {
     });
     this.event = true;
     onePageScroll(".main", {
-      animationTime: 1000,
+      animationTime: 100,
       beforeMove: this.beforeMove.bind(this),
-      afterMove: this.afterMove.bind(this)
+      afterMove: this.afterMove.bind(this),
+      pagination: false,
     });
 
     document.addEventListener('scroll', () => {

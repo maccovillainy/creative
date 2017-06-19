@@ -9,7 +9,9 @@ export default class Slider {
     this.id = 1;
     this.buttons = document.querySelector('.buttons-container__row');
     this.buttons.innerHTML = this.images.map((obj, i) => `
-      <button data-id=${obj.id} class="${i === 0 && 'active-button'} button buttons-container__button">${obj.text}</button>
+      <div class="uk-width-1-4 uk-padding-right uk-padding-left">
+        <button data-id=${obj.id} class="${i === 0 && 'active-button'} uk-button uk-button-default uk-width-1-1">${obj.text}</button>
+      </div>
     `).join('');
     this.activeButton = document.querySelector(`.buttons-container__row button[data-id="1"]`);
     this.buttons.addEventListener('click', e => this.onButton(e));

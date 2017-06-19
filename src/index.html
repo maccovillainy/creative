@@ -8,30 +8,33 @@
 <body scroll="no">
 <div class="wrapper">
   <div class="main">
-    <section class="section illuminator ">
-      <nav class="header-nav container">
-        <div class="logo">
-          Illuminator<br>
-          <span class="logo__span">дизайнерские светильники</span>
-        </div>
-        <ul class="header-nav__ul">
-          <li class="header-nav__li"><a href="#" class="header-nav__a">Все товары</a></li>
-          <li class="header-nav__li"><a href="#" class="header-nav__a">Светильники</a></li>
-          <li class="header-nav__li"><a href="#" class="header-nav__a">Новинки</a></li>
-          <li class="header-nav__li"><a href="#" class="header-nav__a">Скидки</a></li>
-          <li class="header-nav__li"><a href="#" class="header-nav__a">Семейства</a></li>
-          <li class="header-nav__li"><a href="#" class="header-nav__a">Дизайнеры</a></li>
-        </ul>
-        <div class="header-nav__right">
-          <div class="header-nav__contact">
-            <span uk-icon="icon: phone"></span>
-            <span class="header-nav__contact__phone">7(989)282-88-88</span>
+    <section class="section illuminator">
+      <nav class="uk-navbar-nav uk-flex-between uk-container uk-flex-middle uk-container-expand uk-section-secondary"
+           uk-navbar>
+        <div class="">
+          <div class="logo">
+            Illuminator<br>
+            <span class="logo__span uk-navbar-subtitle">дизайнерские светильники</span>
           </div>
-          <div class="header-nav__icons">
+        </div>
+        <ul class="uk-navbar-nav">
+          <li class=""><a href="#" class="">Все товары</a></li>
+          <li class=""><a href="#" class="">Светильники</a></li>
+          <li class=""><a href="#" class="">Новинки</a></li>
+          <li class=""><a href="#" class="">Скидки</a></li>
+          <li class=""><a href="#" class="">Семейства</a></li>
+          <li class=""><a href="#" class="">Дизайнеры</a></li>
+        </ul>
+        <div class="uk-flex uk-flex-middle">
+          <div class="uk-margin-right uk-flex-middle uk-iconnav">
+            <spa uk-icon="icon: phone"></spa>
+            <span class="uk-margin-small-left">7(989)282-88-88</span>
+          </div>
+          <div class="uk-flex uk-flex-middle uk-iconnav">
             <a href="#" uk-icon="icon: heart; ratio: 1.2"></a>
             <a href="#" uk-icon="icon: mail; ratio: 1.2"></a>
-            <a class="active-link header-nav__icons__search-container" href="#" uk-icon="icon: search; ratio: 1.2">
-              <span class="header-nav__icons__search">Поиск</span>
+            <a class="uk-flex uk-flex-middle uk-flex-column-reverse" href="#" uk-icon="icon: search; ratio: 1.2">
+              <span class="uk-text-small">Поиск</span>
             </a>
             <a href="#" uk-icon="icon: question; ratio: 1.2"></a>
             <a href="#" uk-icon="icon: cart; ratio: 1.2"></a>
@@ -40,10 +43,10 @@
           </div>
         </div>
       </nav>
-      <div class="info">
-        <div class="info__main">
-          <h2 class="info__main__h2">Lorem.</h2>
-          <p class="info__main__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam at
+      <div class="info uk-light ">
+        <div class="">
+          <h2 class="uk-text-bold uk-text-uppercase">Illuminate</h2>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam at
             aut cumque delectus dicta dignissimos distinctio dolorem dolorum, earum est expedita hic illo impedit
             nesciunt
             placeat ratione reiciendis, tempore vel velit veritatis voluptas! Blanditiis corporis dicta, dolore
@@ -51,12 +54,12 @@
             fugiat fugit harum id in ipsa ipsum magni maxime mollitia nihil odit quam quibusdam quod rem repudiandae
             similique velit! Accusantium animi cumque deleniti ducimus harum, illo minima tempore ut vitae.
           </p>
-          <a class="info__main__button">Подробнее</a>
+          <a class="uk-button uk-button-default uk-align-right">Подробнее</a>
         </div>
       </div>
     </section>
     <section class="section">
-      <div class="slider">
+      <div class="slider ">
         <div class="content">
           <img src="img/1.jpg" alt="" class="content__img">
           <img src="img/2.jpg" alt="" class="content__img">
@@ -65,19 +68,18 @@
         </div>
         <a href="" class="slider__control slider__control--right uk-slidenav-large" uk-slidenav-next></a>
         <a href="" class="slider__control slider__control--left uk-slidenav-large" uk-slidenav-previous></a>
-        <div class="buttons-container">
-          <h2 class="buttons-container__h2">Выберите свой стиль</h2>
-            <div class="buttons-container__row">
-
-            </div>
+        <div class="buttons-container uk-padding uk-position-bottom uk-position-small uk-position-absolute uk-container uk-light uk-flex uk-flex-column uk-flex-between uk-flex-middle">
+          <h2 class=" uk-align-center uk-text-uppercase">Выберите свой стиль</h2>
+          <div class="buttons-container__row uk-flex uk-flex-between uk-margin-remove uk-width-1-1" uk-grid>
+          </div>
         </div>
       </div>
     </section>
     <section class="section family">
-      <div class="info">
-        <div class="info__main">
-          <h2 class="info__main__h2">Lorem.</h2>
-          <p class="info__main__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam at
+      <div class="info uk-light ">
+        <div class="">
+          <h2 class="uk-text-bold uk-text-uppercase">Illuminate</h2>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam at
             aut cumque delectus dicta dignissimos distinctio dolorem dolorum, earum est expedita hic illo impedit
             nesciunt
             placeat ratione reiciendis, tempore vel velit veritatis voluptas! Blanditiis corporis dicta, dolore
@@ -85,15 +87,15 @@
             fugiat fugit harum id in ipsa ipsum magni maxime mollitia nihil odit quam quibusdam quod rem repudiandae
             similique velit! Accusantium animi cumque deleniti ducimus harum, illo minima tempore ut vitae.
           </p>
-          <a class="info__main__button">Подробнее</a>
+          <a class="uk-button uk-button-default uk-align-right">Подробнее</a>
         </div>
       </div>
     </section>
     <section class="section design">
-      <div class="info">
-        <div class="info__main">
-          <h2 class="info__main__h2">Lorem.</h2>
-          <p class="info__main__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam at
+      <div class="info uk-light ">
+        <div class="">
+          <h2 class="uk-text-bold uk-text-uppercase">Illuminate</h2>
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam at
             aut cumque delectus dicta dignissimos distinctio dolorem dolorum, earum est expedita hic illo impedit
             nesciunt
             placeat ratione reiciendis, tempore vel velit veritatis voluptas! Blanditiis corporis dicta, dolore
@@ -101,84 +103,96 @@
             fugiat fugit harum id in ipsa ipsum magni maxime mollitia nihil odit quam quibusdam quod rem repudiandae
             similique velit! Accusantium animi cumque deleniti ducimus harum, illo minima tempore ut vitae.
           </p>
-          <a class="info__main__button">Подробнее</a>
+          <a class="uk-button uk-button-default uk-align-right">Подробнее</a>
         </div>
       </div>
     </section>
   </div>
 </div>
 <div class="">
-  <div class="social ">
-    <h2 class="social__h2">Мы в соц сетях</h2>
-    <div class="social__row">
-      <div class="social__col">
-        <a href="#" uk-icon="icon: pinterest; ratio: 1.2"></a>
+  <div class="">
+    <h2 class="uk-margin-large-top uk-margin-large-bottom uk-align-center uk-text-center uk-text-uppercase">Мы в соц
+      сетях</h2>
+    <div class="uk-container ">
+      <div class="uk-grid">
 
-        <img src="./img/image.png" alt="">
-        <a class='social__a' href="#">Подробнее</a>
-      </div>
-      <div class="social__col">
-        <a href="#" uk-icon="icon: wordpress; ratio: 1.2"></a>
-        <img src="./img/image.png" alt="">
-        <a class='social__a' href="#">Подробнее</a>
-      </div>
-      <div class="social__col">
-        <a href="#" uk-icon="icon: facebook; ratio: 1.2"></a>
-
-        <img src="./img/image.png" alt="">
-        <a class='social__a' href="#">Подробнее</a>
+        <div class="uk-card uk-card-body uk-width-1-3 uk-flex uk-flex-column uk-flex-middle uk-flex-center">
+          <a class="uk-section-primary uk-border-circle" href="#" uk-icon="icon: pinterest; ratio: 1.2"></a>
+          <img class="uk-margin-top uk-margin-bottom" src="./img/image.png" alt="">
+          <a class='uk-button uk-button-primary' href="#">Подробнее</a>
+        </div>
+        <div class="uk-card uk-card-body uk-width-1-3 uk-flex uk-flex-column uk-flex-middle uk-flex-center">
+          <a class="uk-section-primary uk-border-circle" href="#" uk-icon="icon: pinterest; ratio: 1.2"></a>
+          <img class="uk-margin-top uk-margin-bottom" src="./img/image.png" alt="">
+          <a class='uk-button uk-button-primary' href="#">Подробнее</a>
+        </div>
+        <div class="uk-card uk-card-body uk-width-1-3 uk-flex uk-flex-column uk-flex-middle uk-flex-center">
+          <a class="uk-section-primary uk-border-circle" href="#" uk-icon="icon: pinterest; ratio: 1.2"></a>
+          <img class="uk-margin-top uk-margin-bottom" src="./img/image.png" alt="">
+          <a class='uk-button uk-button-primary' href="#">Подробнее</a>
+        </div>
       </div>
     </div>
   </div>
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__col">
+  <footer class="footer uk-section-secondary uk-padding-large uk-padding-remove-left uk-padding-remove-right">
+    <div class="uk-flex uk-flex-between uk-flex-top uk-container ">
+      <div  class="uk-padding-small">
         <div class="logo">
           Illuminator<br>
           <span class="logo__span">дизайнерские светильники</span>
         </div>
       </div>
-      <div class="footer__col">
-        <h2 class="footer__h2">О нас</h2>
-        <ul class="footer__ul">
-          <li class="footer__li"><a href="#" class="footer__a">О магазину</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Новости</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Акции</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h2 class="footer__h2">Каталог</h2>
-        <ul class="footer__ul">
-          <li class="footer__li"><a href="#" class="footer__a">Информация</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Дизайнерский</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Ретро-лампы</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Точечные</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Комплектующие</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h2 class="footer__h2">Информация</h2>
-        <ul class="footer__ul">
-          <li class="footer__li"><a href="#" class="footer__a">Вопросы</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Доставка</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Оплаты</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Возврат/Обмен</a></li>
-          <li class="footer__li"><a href="#" class="footer__a">Оферта</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h2 class="footer__h2">Подписка</h2>
-        <div class="form">
-          <input type="text" class="form__input" placeholder="Ваш e-mail">
-          <button class="button form__button">ОК</button>
-        </div>
-      </div>
+      <ul class="uk-nav uk-nav-default">
+        <li class="uk-parent">
+          <a class="uk-text-large uk-padding-remove" href="#">О нас</a>
+          <ul class="uk-nav-sub uk-padding-remove">
+            <li class=""><a href="#" class="footer__a">О магазину</a></li>
+            <li class=""><a href="#" class="footer__a">Новости</a></li>
+            <li class=""><a href="#" class="footer__a">Акции</a></li>
+            <li class=""><a href="#" class="footer__a">Контакты</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="uk-nav uk-nav-default">
+        <li class="uk-parent">
+          <a class="uk-text-large uk-padding-remove" href="#">Каталог</a>
+          <ul class="uk-nav-sub uk-padding-remove">
+            <li class="footer__li"><a href="#" class="footer__a">Информация</a></li>
+            <li class="footer__li"><a href="#" class="footer__a">Дизайнерский</a></li>
+            <li class="footer__li"><a href="#" class="footer__a">Ретро-лампы</a></li>
+            <li class="footer__li"><a href="#" class="footer__a">Точечные</a></li>
+            <li class="footer__li"><a href="#" class="footer__a">Комплектующие</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="uk-nav uk-nav-default">
+        <li class="uk-parent">
+          <a class="uk-text-large uk-padding-remove" href="#">Информация</a>
+          <ul class="uk-nav-sub uk-padding-remove">
+            <li class="footer__li"><a href="#" class="footer__a">Вопросы</a></li>
+            <li class="footer__li"><a href="#" class="footer__a">Доставка</a></li>
+            <li class="footer__li"><a href="#" class="footer__a">Оплаты</a></li>
+            <li class="footer__li"><a href="#" class="footer__a">Возврат/Обмен</a></li>
+            <li class="footer__li"><a href="#" class="footer__a">Оферта</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="uk-nav uk-nav-default">
+        <li class="uk-parent">
+          <a class="uk-text-large uk-padding-remove" href="#">О нас</a>
+          <ul class="uk-nav-sub uk-padding-remove">
+            <div class="uk-flex">
+              <input type="text" class="uk-input margin-top" placeholder="Ваш e-mail">
+              <button class="uk-button uk-button-default uk-button-small uk-margin-small-left">ОК</button>
+            </div>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </footer>
+</footer>
 </div>
 <div class="fixed-nav">
-  <ul class="fixed-nav__ul">
+  <ul class="fixed-nav__ul uk-padding-remove">
     <li class="fixed-nav__li fixed-nav__li--social">
       <a href="#" uk-icon="icon: wordpress"></a>
     </li>
@@ -188,13 +202,13 @@
     <li class="fixed-nav__li fixed-nav__li--social">
       <a href="#" uk-icon="icon: pinterest"></a>
     </li>
-    <li class="fixed-nav__li"><a  href="#" uk-icon="icon: minus"></a></li>
+    <li class="fixed-nav__li"><a href="#" uk-icon="icon: minus"></a></li>
     <li class="fixed-nav__li scroll-control__up">
-      <a  href="#" uk-icon="icon: arrow-up"></a>
+      <a href="#" uk-icon="icon: arrow-up"></a>
     </li>
     <li class="fixed-nav__li scroll-control__info">1/4</li>
     <li class="fixed-nav__li scroll-control__down">
-      <a  href="#" uk-icon="icon: arrow-down"></a>
+      <a href="#" uk-icon="icon: arrow-down"></a>
     </li>
   </ul>
 </div>
