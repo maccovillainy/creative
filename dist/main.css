@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+  font-size: 18px;
+  color: #fff; }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none; }
+
+.logo {
+  font-size: 16px;
+  line-height: .7rem;
+  letter-spacing: .22rem;
+  cursor: pointer; }
+  .logo__span {
+    font-size: 12px;
+    color: #68686a;
+    letter-spacing: -.02rem; }
+
+.info {
+  top: 17%;
+  right: 17.2%;
+  padding: 0 40px;
+  max-width: 630px;
+  height: 630px;
+  background-color: rgba(45, 45, 45, 0.6); }
+
+.fixed-nav__li {
+  margin-bottom: 1px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer; }
+  .fixed-nav__li--social {
+    color: #000; }
+
+.design {
+  background: url(img/sweet-1920x1080-background-1920x1080-wallpaper.jpg) no-repeat center center;
+  background-size: cover; }
+
+.family {
+  background: url(img/best-wallpapers-hd-6.jpg) no-repeat center center;
+  background-size: cover; }
+
+.illuminator {
+  background: url(img/96113.jpg) no-repeat center center;
+  background-size: cover; }
+
+.content__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity .4s; }
+
+.buttons-container {
+  bottom: 30px;
+  margin: auto;
+  background-color: transparent;
+  border: 2px solid #fff; }
+
+.slider__control {
+  top: calc(50% - 17px);
+  color: #fff; }
+  .slider__control--left {
+    left: 50px; }
+  .slider__control--right {
+    right: 50px; }

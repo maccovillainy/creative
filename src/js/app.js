@@ -3,7 +3,7 @@ import UIkit from 'uikit';
 import Icons from 'uikit/dist/js/uikit-icons';
 import Scroll from './scroll';
 import Slider from './slider';
-import '../index.php';
+import '../index.html';
 UIkit.use(Icons);
 
 if ('scrollRestoration' in history) {

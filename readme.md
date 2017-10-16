@@ -1,3 +1,3 @@
 * npm i
 * webpack
-* after that lunch index.php
+* after that lunch dist/index.html
